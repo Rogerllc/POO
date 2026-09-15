@@ -1,8 +1,8 @@
-public class conta {
+public class Conta {
     private String titular;
     private double saldo;
 
-    public conta(String titular, double saldo){
+    public Conta(String titular, double saldo){
         this.titular = titular;
         this.saldo = saldo;
     }
@@ -29,7 +29,7 @@ public class conta {
         }
     }
     public static void main(String[] args){
-        conta c = new conta("Carlos", 1000);
+        Conta c = new Conta("Carlos", 1000);
         c.depositar(300);
         c.sacar(900);
         System.out.println("Saldo atual: " + c.getSaldo());
